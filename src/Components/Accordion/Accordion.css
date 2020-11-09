@@ -1,0 +1,9 @@
+.open {
+    outline:1px solid black;
+  display: block;
+}
+
+.closed {
+    outline:1px solid blue;
+    display: none;
+}

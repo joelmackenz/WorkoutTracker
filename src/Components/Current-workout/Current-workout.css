@@ -1,0 +1,28 @@
+.select-and-display {
+    display:flex;
+    flex-direction:row;
+}
+
+.select-display-element {
+    display:flex;
+    flex-direction:column;
+    background-color:teal;
+    padding:2vw;
+}
+
+.select-display-element-2 {
+    width:80%;
+}
+
+.inner-1 {
+    background-color:teal;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.inner-2 {
+    background-color: lightsteelblue;
+}
+
+
