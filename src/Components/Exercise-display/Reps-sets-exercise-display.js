@@ -11,6 +11,7 @@ class ExerciseDisplay extends React.Component {
             exercise: "",
         }
     this.addSet = this.addSet.bind(this);
+    this.removeExercise = this.removeExercise.bind(this)
     }
 
     addSet(reps){
@@ -22,9 +23,14 @@ class ExerciseDisplay extends React.Component {
         this.props.onChange([this.state.sets + 1, reps, this.props.exercise])
     }
 
+    removeExercise(){
+        this.props.removeExercise(this.props.exercise)
+    }
+
     render(){
         return(
             <div className="exercise">
+                 <button onClick={this.removeExercise}>X</button>
                 <h3 className="title">{this.props.exercise}</h3>
                 <NumberInput onChange={this.addSet}/>
                 <div>

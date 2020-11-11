@@ -11,6 +11,7 @@ class StrengthWorkoutDisplay extends React.Component {
            selectedExercises: []
         }
         this.saveExercises = this.saveExercises.bind(this)
+        this.removeExercise = this.removeExercise.bind(this)
     }
 
     saveExercises(exerciseInfoArray) {
@@ -21,6 +22,10 @@ class StrengthWorkoutDisplay extends React.Component {
         })
         this.props.onChange(selectedExercisesClone)
     }
+    
+    removeExercise(exercise){
+        this.props.removeExercise(exercise)
+    }
 
     render(){
         return(
@@ -30,6 +35,7 @@ class StrengthWorkoutDisplay extends React.Component {
                         key={i}
                         exercise={entry} 
                         onChange={this.saveExercises}
+                        removeExercise={this.removeExercise}
                     />
                 )}
             </div>

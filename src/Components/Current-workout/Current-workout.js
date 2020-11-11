@@ -67,8 +67,7 @@ class CurrentWorkout extends React.Component{
 
     removeExercise(exercise){
         let currentExercisesClone = Array.from(this.state.currentExercises)
-        // currentExercisesClone.filter(function(value){ return value === exercise;});
-        //^^^^^^^^^^^^ This must select everything that isn't the exercise and return them
+        currentExercisesClone = currentExercisesClone.filter(ele => ele !== exercise)
         this.setState({
             currentExercises: currentExercisesClone
         })
@@ -94,6 +93,7 @@ s
                         <div className="inner-2">
                             <StrengthWorkoutDisplay 
                                 onChange={this.updateWorkoutList} 
+                                removeExercise={this.removeExercise}
                                 exerciseList={this.state.currentExercises}
                             />
                         </div>
