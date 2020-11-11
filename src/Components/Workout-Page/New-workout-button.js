@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import "./New-workout-button.css";
 
 class NewWorkoutButton extends React.Component {
     constructor(props){
@@ -37,7 +38,7 @@ class NewWorkoutButton extends React.Component {
     render(){
         return(
             <div>
-                <button onClick={this.newWorkout}>
+                <button className="button" onClick={this.newWorkout}>
                     {this.props.title}
                 </button>
             </div>

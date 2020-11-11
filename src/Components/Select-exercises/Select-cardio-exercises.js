@@ -1,4 +1,5 @@
 import React from "react";
+import "./Select-exercises.css"
 
 class selectCardioExercises extends React.Component {
     constructor(props){
@@ -20,6 +21,7 @@ class selectCardioExercises extends React.Component {
     render(){
         return(
                 <select 
+                className="select-dropdown"
                 id="lessonSelect" 
                 onChange={this.handleChange}>
                     <option value="" selected disabled hidden>Choose an exercise</option>

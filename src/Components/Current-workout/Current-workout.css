@@ -1,6 +1,12 @@
+.save-new-element{
+    padding:1rem;
+    font-size:.75rem;
+}
+
 .select-and-display {
     display:flex;
     flex-direction:row;
+    height:100%;
 }
 
 .select-display-element {

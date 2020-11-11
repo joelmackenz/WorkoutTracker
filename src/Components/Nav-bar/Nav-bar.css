@@ -2,17 +2,22 @@
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-items: center;
     background-color:orange;
+}
+
+.logo {
+    margin:0,10,0,0
 }
 .nav-links {
     display:flex;
     flex-direction: row;
     align-items:center;
     justify-content:center;
-    outline:dotted red;
 }
 
 .nav-link {
     padding:1rem;
+    color:black;
+    text-transform: capitalize;
+    text-decoration: none;
 }

@@ -1,11 +1,13 @@
 import React from "react";
+import logo from "../Icons/icons8-weight-64.png"
+import "./Home.css"
 
 
 function Home() {
     return (
       <div>
         <h2>Welcome to </h2>
-        <h1>Workout Tracker!</h1>
+        <h1>work<img src={logo} alt="" className="logo"/>ut tracker!</h1>
         <ul>
           <li>Track your workouts by exercise, reps, and sets</li>
           <li>Set and save fitness goals</li>

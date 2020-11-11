@@ -1,24 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import logo from '../../Icons/icons8-weight-64.png'
 import "./Nav-bar.css";
 
 function Nav() {
 
   return (
     <nav className='nav'>
-        <h1>Workout Tracker</h1>
+        <h1>workout tracker</h1>
+        <img src={logo} className="logo" alt=""/>
             <ul className="nav-links">
                 <Link className="nav-link" to='/'>
-                    <li>Home</li>
+                    <li>HOME</li>
                 </Link>
                 <Link className="nav-link" to='/workout'>
-                    <li>Workout</li>
+                    <li>WORKOUT</li>
                 </Link>
                 <Link className="nav-link" to='/previous-workouts'>
-                    <li>Previous Workouts</li>
+                    <li>PREVIOUS WORKOUTS</li>
                 </Link>
                 <Link className="nav-link" to='/placeholder'>
-                    <li>Goals</li>
+                    <li>GOALS</li>
                 </Link>
             </ul>
     </nav>
