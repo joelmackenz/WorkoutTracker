@@ -8,7 +8,7 @@ function Nav() {
   return (
     <nav className='nav'>
         <h1>workout tracker</h1>
-        <img src={logo} className="logo" alt=""/>
+        <img src={logo} className="nav-logo" alt=""/>
             <ul className="nav-links">
                 <Link className="nav-link" to='/'>
                     <li>HOME</li>
@@ -19,7 +19,7 @@ function Nav() {
                 <Link className="nav-link" to='/previous-workouts'>
                     <li>PREVIOUS WORKOUTS</li>
                 </Link>
-                <Link className="nav-link" to='/placeholder'>
+                <Link className="nav-link" to='/goals'>
                     <li>GOALS</li>
                 </Link>
             </ul>

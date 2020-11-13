@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/WorkoutTracker/precache-manifest.6037d2eab425e215f0bb08f504fb4053.js"
+  "/WorkoutTracker/precache-manifest.4e285edbf8ed29e3ed4aee91c95a0d2f.js"
 );
 
 self.addEventListener('message', (event) => {

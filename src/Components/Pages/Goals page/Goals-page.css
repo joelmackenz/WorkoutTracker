@@ -1,0 +1,17 @@
+.goals-main {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    height:75%;;
+}
+
+.sidebar {
+    padding:1%;
+    width:25%;
+    background-color:burlywood;
+    height:100%;
+}
+
+.new-goal-input {
+    width:75%;
+}

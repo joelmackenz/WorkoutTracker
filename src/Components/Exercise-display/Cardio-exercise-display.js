@@ -1,5 +1,5 @@
 import React from "react";
-import Stopwatch from "../Stopwatch/Stopwatch"
+import Stopwatch from "../Tools/Stopwatch/Stopwatch"
 import "./Exercise-display.css";
 import CardioTimeButton from "./Cardio-time-button";
 

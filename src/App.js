@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-import WorkoutPage from './Components/Workout-Page/Workout-page';
-import PreviousWorkoutsPage from './Components/Previous-workouts-page/Previous-workouts-page'
-import Home from './Components/Home';
+import WorkoutPage from './Components/Pages/Workout-Page/Workout-page';
+import PreviousWorkoutsPage from './Components/Pages/Previous-workouts-page/Previous-workouts-page';
+import GoalsPage from './Components/Pages/Goals page/Goals-page'
+import Home from './Components/Pages/Home page/Home';
 import Nav from "./Components/Nav-bar/Nav-bar"
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -21,7 +22,7 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}> 
       <div className="App">
-        <Nav/>
+        <Nav className="nav"/>
         <Switch>
           <Route 
             path="/" 
@@ -36,7 +37,7 @@ function App() {
               workoutInfo={currentWorkoutInfo} 
               date={workoutDate}/>}
             />
-          {/* <Route path="/goals" component={GoalsPage} /> */}
+          <Route path="/goals" component={GoalsPage} />
         </Switch>
       </div>
     </Router>
