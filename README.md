@@ -8,8 +8,6 @@ This application was made as part of the co-hort program with Hatchways.
 ## Contributors
 
 - [Joel MacKenzie](https://github.com/joelmackenz)
-- [Carlos Neisa](https://github.com/AndresNeisa)
-- [Hassan Farahani](https://github.com/hassanfarahani)
 
 ## Technologies
 
