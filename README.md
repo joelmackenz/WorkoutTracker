@@ -2,10 +2,6 @@
 
 Workout Tracker is a web app designed to keep track of workouts. A user can input, display, and view current and past workouts, categorized by strength training or cardio.
 
-## General Information
-
-This application was made as part of the co-hort program with Hatchways.
-
 ## Contributors
 
 -   [Joel MacKenzie](https://github.com/joelmackenz)
